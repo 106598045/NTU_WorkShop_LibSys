@@ -8,6 +8,7 @@ public class Book {
     private String author;
     private String subject;
     private boolean isCheck;
+    private String borrower;
 
     public void setBookId(int id){
         this.bookId = id;
@@ -39,5 +40,13 @@ public class Book {
 
     public boolean getIsCheck(){
         return isCheck;
+    }
+
+    public void setBorrower(String borrower){
+        this.borrower = borrower;
+    }
+
+    public String getBorrower(){
+        return this.borrower;
     }
 }
