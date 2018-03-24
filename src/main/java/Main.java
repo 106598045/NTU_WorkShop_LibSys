@@ -8,35 +8,6 @@ import java.util.List;
  */
 public class Main {
     public static void main(String[] args) {
-        Book book = new Book();
-        book.setBookId(1);
-        book.setAuthor("林翰隆");
-        book.setSubject("深度學習法");
-        book.setIsCheck(true);
-        book.setBorrower("戴碩宏");
-        System.out.println(book.getBookId());
-        System.out.println(book.getAuthor());
-        System.out.println(book.getSubject());
-        System.out.println(book.getIsCheck());
-        System.out.println(book.getIsCheck());
-
-        //測試add
-        LibraryRepository.addBookToList(book);
-        System.out.println(LibraryRepository.getCurrentId());
-
-        //測試add已存在的書
-        System.out.println(LibraryRepository.addBookToList(book));
-        System.out.println(LibraryRepository.getCurrentId());
-
-        //測試romove書
-        LibraryRepository.romoveBookByList(book);
-        System.out.println(LibraryRepository.getCurrentId());
-        System.out.println(LibraryRepository.addBookToList(book));
-        System.out.println(LibraryRepository.getCurrentId());
-
-        //測試romove書
-        System.out.println(LibraryRepository.romoveBookByList(book));
-        System.out.println(LibraryRepository.getCurrentId());
 
         Book book2 = new Book();
         book2.setAuthor("林翰隆");
@@ -51,17 +22,6 @@ public class Main {
         book3.setBorrower("戴碩宏");
         System.out.println(LibraryRepository.addBookToList(book2));
         System.out.println(LibraryRepository.addBookToList(book3));
-
-        //測試checkout
-        System.out.println("----------測試checkout-----------");
-        book2.setBookId(LibraryRepository.getCurrentId());
-        System.out.println("book checkout :"+LibraryRepository.checkoutBook(book2));
-        System.out.println("book isCheck status:"+book2.getIsCheck());
-        System.out.println("book get borrower:"+LibraryRepository.findBorrower(book2.getBookId()));
-
-        //測試checkout已經被借走的書
-        System.out.println("----------測試checkout已經被借走的書-----------");
-        System.out.println("checkout of the checked out book : "+LibraryRepository.checkoutBook(book2));
 
         //測試getBookid 取得book
         System.out.println("----------測試getBookid-----------");
@@ -116,9 +76,5 @@ public class Main {
         for(int i = 0;i < bookList3_3.size();i++){
             System.out.println(bookList3_3.get(i).getSubject());
         }
-
-        /*User user = new Borrower();
-        user.checkoutBook();*/
-
     }
 }

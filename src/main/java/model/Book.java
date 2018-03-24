@@ -10,6 +10,10 @@ public class Book {
     private boolean isCheck;
     private String borrower;
 
+    public Book(){
+        isCheck = false;
+    }
+
     public void setBookId(int id){
         this.bookId = id;
     }

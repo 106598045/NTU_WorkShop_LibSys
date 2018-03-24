@@ -9,6 +9,7 @@ import java.util.List;
 public class LibraryRepository {
     private static List<Book> bookList = new ArrayList<Book>();;
     private static int currentId;
+
     //如果false代表lib已存在相同subject
     public static boolean addBookToList(Book book){
         boolean existbook = false;
@@ -16,7 +17,7 @@ public class LibraryRepository {
         if(!bookList.isEmpty())
             existbook = existBook(book.getSubject());
 
-        if(!existbook){
+        if(!existbook && (book.getSubject() != null) && (book.getAuthor() != null)){
             book.setBookId(currentId++);
             bookList.add(book);
             res = true;
@@ -30,6 +31,7 @@ public class LibraryRepository {
         boolean res = false;
         if(existbook) {
             bookList.remove(book);
+            res = true;
         }
         return res;
     }
