@@ -107,32 +107,104 @@ public class LibraryRepositoryTest {
         book2.setBookId(0);
         assertEquals(true,LibraryRepository.checkoutBook(book2));
         assertEquals(true,book2.getIsCheck());
-        assertEquals(true,LibraryRepository.returnBook(book2)); //有bug
+        assertEquals(true,LibraryRepository.returnBook(book2));
+        assertEquals("", LibraryRepository.findBookById(0).getBorrower());
+    }
+
+    @Test
+    public void returnBookNonCheckout() throws Exception {
+        Book book2 = new Book();
+        book2.setAuthor("林翰隆");
+        book2.setSubject("深度學習法");
+        book2.setBorrower("戴碩宏");
+        LibraryRepository.addBookToList(book2);
+        book2.setBookId(0);
+        assertEquals(false,book2.getIsCheck());
+        assertEquals(false,LibraryRepository.returnBook(book2));
+
     }
 
     @Test
     public void findBookById() throws Exception {
+        Book book2 = new Book();
+        book2.setAuthor("林翰隆");
+        book2.setSubject("深度學習法");
+        book2.setBorrower("戴碩宏");
+        LibraryRepository.addBookToList(book2);
+        assertEquals("深度學習法",LibraryRepository.findBookById(0).getSubject());
 
+        assertEquals(null,LibraryRepository.findBookById(1));
     }
 
     @Test
     public void findBookByAuthor() throws Exception {
+        Book book2 = new Book();
+        book2.setAuthor("林翰隆");
+        book2.setSubject("深度學習法");
+        book2.setBorrower("戴碩宏");
+        LibraryRepository.addBookToList(book2);
+        assertEquals(1,LibraryRepository.findBookByAuthor("林翰隆").size());
+
+        assertEquals(null,LibraryRepository.findBookByAuthor("周治學"));
     }
 
     @Test
     public void findBookBySubject() throws Exception {
+        Book book2 = new Book();
+        book2.setAuthor("林翰隆");
+        book2.setSubject("深度學習法");
+        book2.setBorrower("戴碩宏");
+        LibraryRepository.addBookToList(book2);
+        assertEquals(1,LibraryRepository.findBookBySubject("深度學習法").size());
+
+        assertEquals(null,LibraryRepository.findBookBySubject("深度"));
     }
 
     @Test
     public void findBookByBorrower() throws Exception {
+        Book book2 = new Book();
+        book2.setAuthor("林翰隆");
+        book2.setSubject("深度學習法");
+        book2.setBorrower("戴碩宏");
+        LibraryRepository.addBookToList(book2);
+        assertEquals(1,LibraryRepository.findBookByBorrower("戴碩宏").size());
+
+        assertEquals(null,LibraryRepository.findBookByBorrower("林翰隆"));
     }
 
     @Test
     public void findBorrower() throws Exception {
+        Book book2 = new Book();
+        book2.setAuthor("林翰隆");
+        book2.setSubject("深度學習法");
+        book2.setBorrower("戴碩宏");
+        LibraryRepository.addBookToList(book2);
+        LibraryRepository.checkoutBook(book2);
+        assertEquals("戴碩宏",LibraryRepository.findBorrower(0));
+
+        assertEquals(null,LibraryRepository.findBorrower(1));
     }
 
     @Test
     public void getCurrentId() throws Exception {
+        Book book2 = new Book();
+        book2.setAuthor("林翰隆");
+        book2.setSubject("深度學習法");
+        book2.setBorrower("戴碩宏");
+        LibraryRepository.addBookToList(book2);
+        assertEquals(1,LibraryRepository.getCurrentId());
+    }
+
+    @Test
+    public void isCheckOut() throws Exception {
+        Book book2 = new Book();
+        book2.setAuthor("林翰隆");
+        book2.setSubject("深度學習法");
+        book2.setBorrower("戴碩宏");
+        LibraryRepository.addBookToList(book2);
+        LibraryRepository.checkoutBook(book2);
+        assertEquals(true,LibraryRepository.isCheckedOut(0));
+
     }
 
 }
