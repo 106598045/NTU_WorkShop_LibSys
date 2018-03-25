@@ -56,7 +56,7 @@ public class LibraryRepository {
         int bookid = book.getBookId();
         for(int i = 0; i < bookList.size();i++){
             if(bookList.get(i).getBookId() == bookid) {
-                if(!bookList.get(i).getIsCheck()){
+                if(bookList.get(i).getIsCheck()){
                     bookList.get(i).setIsCheck(false);
                     res = true;
                 }
@@ -101,6 +101,7 @@ public class LibraryRepository {
         }
         return list;
     }
+
     //null代表沒有被借出
     public static String findBorrower(int id){
         Book book = null;
@@ -123,7 +124,7 @@ public class LibraryRepository {
         return res;
     }
 
-    private static boolean isCheckedOut(int id){
+    public static boolean isCheckedOut(int id){
         boolean res = false;
         for(int i = 0; i < bookList.size();i++){
             if(bookList.get(i).getBookId() == id) {

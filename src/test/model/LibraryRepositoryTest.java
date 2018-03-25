@@ -112,6 +112,7 @@ public class LibraryRepositoryTest {
 
     @Test
     public void findBookById() throws Exception {
+
     }
 
     @Test
