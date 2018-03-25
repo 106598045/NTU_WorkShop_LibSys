@@ -1,5 +1,6 @@
 package model;
 
+import bean.Book;
 import org.junit.Test;
 
 import static org.junit.Assert.*;

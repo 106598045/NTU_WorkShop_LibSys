@@ -9,8 +9,8 @@
         <module name="NTU_WS_LibSys" />
       </profile>
     </annotationProcessing>
-    <bytecodeTargetLevel>
-      <module name="NTU_WS_LibSys" target="1.5" />
+    <bytecodeTargetLevel target="1.8">
+      <module name="NTU_WS_LibSys" target="1.8" />
     </bytecodeTargetLevel>
   </component>
 </project>

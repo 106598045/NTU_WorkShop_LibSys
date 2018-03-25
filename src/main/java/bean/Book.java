@@ -1,4 +1,4 @@
-package model;
+package bean;
 
 /**
  * Created by gunch on 2018/3/24.
