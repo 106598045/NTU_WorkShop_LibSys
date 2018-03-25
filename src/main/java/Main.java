@@ -11,7 +11,6 @@ import java.util.Queue;
  */
 public class Main {
     static Queue<String> commandList = new LinkedList<String>();
-    //static List<String> commandList = new ArrayList<String>();
     public static void main(String[] args) {
         String path = "";
         path = ""+ InputHandler.class.getClassLoader().getResource("");
@@ -22,14 +21,11 @@ public class Main {
         final String[] splittedStr = content.split("\n");
         for (String s : splittedStr) {
             commandList.add(s);
-            //System.out.println(commandList.poll());
+
         }
-
-
-       // System.out.println(commandList);
         getBookByCommand();
         getUserByCommand();
-
+        getBehaviorByCommand();
     }
 
     public static void getBookByCommand(){
@@ -57,6 +53,9 @@ public class Main {
                     String[] s = commandList.poll().split(" ");
                     String userType = s[0];
                     String userName = s[1];
+                    if(userType == "Borrower"){
+                        String limit = s[2];
+                    }
                     System.out.println(userType+","+userName);
                 }
                 return;
@@ -68,23 +67,21 @@ public class Main {
         while (!commandList.isEmpty()){
             String currentCmd = commandList.poll();
             if(currentCmd.contains("addBook")){
-
-            }else if(currentCmd.contains("addBook")){
-
+                System.out.println("addBook");
             }else if(currentCmd.contains("removeBook")){
-
+                System.out.println("removeBook");
             }else if(currentCmd.contains("checkout")){
-
+                System.out.println("checkout");
             }else if(currentCmd.contains("return")){
-
+                System.out.println("return");
             }else if(currentCmd.contains("listAuthor")){
-
+                System.out.println("listAuthor");
             }else if(currentCmd.contains("listSubject")){
-
-            }else if(currentCmd.contains("listSubject")){
-
+                System.out.println("listSubject");
+            }else if(currentCmd.contains("findChecked")){
+                System.out.println("findChecked");
             }else if(currentCmd.contains("findBorrower")){
-
+                System.out.println("findBorrower");
             }
         }
     }
