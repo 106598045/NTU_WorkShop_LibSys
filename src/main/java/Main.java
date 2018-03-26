@@ -1,15 +1,19 @@
 import bean.Book;
-import model.InputHandler;
+import model.*;
+import sun.rmi.server.InactiveGroupException;
 
+import javax.jws.soap.SOAPBinding;
 import java.util.ArrayList;
+import java.util.Arrays;
 import java.util.LinkedList;
-import java.util.List;
 import java.util.Queue;
 
 /**
  * Created by gunch on 2018/3/24.
  */
 public class Main {
+    static ArrayList<Book> books = new ArrayList<Book>();
+    static ArrayList<User> users = new ArrayList<User>();
     static Queue<String> commandList = new LinkedList<String>();
     public static void main(String[] args) {
         String path = "";
@@ -23,40 +27,44 @@ public class Main {
             commandList.add(s);
 
         }
-        getBookByCommand();
-        getUserByCommand();
+        createBookByCommand();
+        createUserByCommand();
         getBehaviorByCommand();
     }
 
-    public static void getBookByCommand(){
-        for(int i= 0;i<commandList.size();i++){
+    public static void createBookByCommand() {
+        for (int i = 0; i < commandList.size(); i++) {
             String currentCmd = commandList.poll();
-            if(currentCmd.matches("\\d")){
+            if (currentCmd.matches("\\d")) {
                 int bookNum = Integer.parseInt(currentCmd);
-                for(int j=0;j<bookNum;j++){
+                for (int j = 0; j < bookNum; j++) {
+                    Book book1 = new Book();
                     String[] s = commandList.poll().split(" ");
                     String bookAuthor = s[0];
                     String bookSubject = s[1];
-                    System.out.println(bookAuthor+","+bookSubject);
+                    book1.setAuthor(bookAuthor);
+                    book1.setSubject(bookSubject);
+                    books.add(book1);
                 }
                 return;
             }
         }
     }
 
-    public static void getUserByCommand(){
-        for(int i= 0;i<commandList.size();i++){
+    public static void createUserByCommand() {
+        for (int i = 0; i < commandList.size(); i++) {
             String currentCmd = commandList.poll();
-            if(currentCmd.matches("\\d")){
+            if (currentCmd.matches("\\d")) {
                 int userNum = Integer.parseInt(currentCmd);
-                for(int j=0;j<userNum;j++){
+                for (int j = 0; j < userNum; j++) {
                     String[] s = commandList.poll().split(" ");
-                    String userType = s[0];
-                    String userName = s[1];
-                    if(userType == "Borrower"){
-                        String limit = s[2];
+                    User user;
+                    if (s.length == 2) { //2表示是員工
+                        user = new Staff(s[1]); //s[1]為員工名字
+                    } else { //不然就是借閱人
+                        user = new Borrower(s[1], Integer.parseInt(s[2])); //s[1]為借閱人名字、s[2]為此借閱人最多可借的書數量
                     }
-                    System.out.println(userType+","+userName);
+                    users.add(user); //將此使用者存入ArrayList<User>這個容器
                 }
                 return;
             }
@@ -66,23 +74,56 @@ public class Main {
     public static void getBehaviorByCommand(){
         while (!commandList.isEmpty()){
             String currentCmd = commandList.poll();
+            System.out.println(currentCmd);
+            String[] s = currentCmd.split(" ");
+            String userName = s[0];
             if(currentCmd.contains("addBook")){
-                System.out.println("addBook");
+                currentCmd = commandList.poll();
+                String[] bookInfo = currentCmd.split(" ");
+                String bookAuthor = bookInfo[0];
+                String bookSubject = bookInfo[1];
+                Book book = new Book();
+                book.setAuthor(bookAuthor);
+                book.setSubject(bookSubject);
+                findUser(userName).addBook(book);
+                System.out.println(LibraryRepository.findBookById(0).getAuthor()+","+LibraryRepository.findBookById(0).getSubject());
             }else if(currentCmd.contains("removeBook")){
-                System.out.println("removeBook");
+                int bookId = Integer.parseInt(s[2]);
+                findUser(userName).removeBook(bookId);
             }else if(currentCmd.contains("checkout")){
-                System.out.println("checkout");
+                String borrower = s[2];
+                currentCmd = commandList.poll();
+                String[] bookId = currentCmd.split(" ");
+                ArrayList<Integer> bookIdList = new ArrayList<Integer>();
+                for(int i = 0;i< bookId.length;i++){
+                    bookIdList.add(Integer.parseInt(bookId[i]));
+                }
+                findUser(userName).checkout(findUser(borrower),bookIdList);
             }else if(currentCmd.contains("return")){
-                System.out.println("return");
+                int bookId = Integer.parseInt(s[2]);
+                findUser(userName).theReturnBook(bookId);
             }else if(currentCmd.contains("listAuthor")){
-                System.out.println("listAuthor");
+                String author = s[2];
+                findUser(userName).listAuthor(author);
             }else if(currentCmd.contains("listSubject")){
-                System.out.println("listSubject");
+                String subject = s[2];
+                findUser(userName).listSubject(subject);
             }else if(currentCmd.contains("findChecked")){
-                System.out.println("findChecked");
+                String borrower = s[2];
+                findUser(userName).findChecked(findUser(borrower));
             }else if(currentCmd.contains("findBorrower")){
-                System.out.println("findBorrower");
+                int bookId = Integer.parseInt(s[2]);
+                findUser(userName).findBorrower(bookId);
             }
         }
+    }
+
+    public static User findUser(String userName){
+        for(int i=0;i<users.size();i++){
+            if(users.get(i).getUserName().equals(userName)){
+                return users.get(i);
+            }
+        }
+        return null;
     }
 }
