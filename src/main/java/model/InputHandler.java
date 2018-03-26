@@ -5,14 +5,15 @@ import java.io.FileReader;
 import java.io.IOException;
 
 public class InputHandler {
+
     String filePath;
     BufferedReader br;
 
-    public InputHandler(String filePath){
+    public InputHandler(String filePath) {
         this.filePath = filePath;
-        try{
+        try {
             br = new BufferedReader(new FileReader(filePath));
-        }catch (IOException e){
+        } catch (IOException e) {
             e.printStackTrace();
         }
 
@@ -33,7 +34,9 @@ public class InputHandler {
             e.printStackTrace();
         } finally {
             try {
-                if (br != null) br.close();
+                if (br != null) {
+                    br.close();
+                }
             } catch (IOException ex) {
                 ex.printStackTrace();
             }

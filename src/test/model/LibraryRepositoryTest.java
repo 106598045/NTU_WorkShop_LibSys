@@ -44,7 +44,8 @@ public class LibraryRepositoryTest {
         Book book2 = new Book();
         book2.setAuthor("戴碩宏");
         book2.setSubject("深度學習法");
-        assertEquals(false,LibraryRepository.addBookToList(book2));
+        //可以加
+        assertEquals(true,LibraryRepository.addBookToList(book2));
     }
 
     @Test
