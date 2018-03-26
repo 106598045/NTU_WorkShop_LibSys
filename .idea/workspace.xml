@@ -5,6 +5,11 @@
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change beforePath="$PROJECT_DIR$/src/main/java/Main.java" afterPath="$PROJECT_DIR$/src/main/java/Main.java" />
       <change beforePath="$PROJECT_DIR$/src/main/java/model/LibraryRepository.java" afterPath="$PROJECT_DIR$/src/main/java/model/LibraryRepository.java" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/model/Staff.java" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/model/User.java" afterPath="$PROJECT_DIR$/src/main/java/model/User.java" />
+      <change beforePath="$PROJECT_DIR$/target/classes/Main.class" afterPath="$PROJECT_DIR$/target/classes/Main.class" />
+      <change beforePath="$PROJECT_DIR$/target/classes/model/LibraryRepository.class" afterPath="$PROJECT_DIR$/target/classes/model/LibraryRepository.class" />
+      <change beforePath="$PROJECT_DIR$/target/classes/model/Staff.class" afterPath="$PROJECT_DIR$/target/classes/model/Staff.class" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -44,17 +49,17 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="375">
-      <file leaf-file-name="Main.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="Main.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/Main.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="568">
-              <caret line="109" column="53" lean-forward="false" selection-start-line="109" selection-start-column="53" selection-end-line="109" selection-end-column="53" />
+            <state relative-caret-position="397">
+              <caret line="89" column="54" lean-forward="true" selection-start-line="89" selection-start-column="54" selection-end-line="89" selection-end-column="54" />
               <folding>
                 <element signature="imports" expanded="true" />
-                <element signature="e#333#339#0" expanded="true" />
-                <element signature="e#391#397#0" expanded="true" />
-                <element signature="e#454#462#0" expanded="true" />
-                <element signature="e#3728#3737#0" expanded="true" />
+                <element signature="e#227#233#0" expanded="true" />
+                <element signature="e#285#291#0" expanded="true" />
+                <element signature="e#348#356#0" expanded="true" />
+                <element signature="e#3591#3600#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -63,40 +68,9 @@
       <file leaf-file-name="User.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/model/User.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="291">
-              <caret line="38" column="0" lean-forward="false" selection-start-line="38" selection-start-column="0" selection-end-line="38" selection-end-column="0" />
-              <folding>
-                <element signature="method#listAuthor#0;class#User#0" expanded="false" />
-                <element signature="method#listSubject#0;class#User#0" expanded="false" />
-                <element signature="method#showFormatResult#0;class#User#0" expanded="false" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="sampleInput" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/file/sampleInput">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="133">
-              <caret line="7" column="0" lean-forward="false" selection-start-line="7" selection-start-column="0" selection-end-line="8" selection-end-column="16" />
+            <state relative-caret-position="150">
+              <caret line="31" column="32" lean-forward="false" selection-start-line="31" selection-start-column="16" selection-end-line="31" selection-end-column="32" />
               <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Book.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/bean/Book.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="95">
-              <caret line="5" column="13" lean-forward="false" selection-start-line="5" selection-start-column="13" selection-end-line="5" selection-end-column="13" />
-              <folding>
-                <element signature="e#232#233#0" expanded="true" />
-                <element signature="e#263#264#0" expanded="true" />
-                <element signature="e#360#361#0" expanded="true" />
-                <element signature="e#394#395#0" expanded="true" />
-                <element signature="e#505#506#0" expanded="true" />
-                <element signature="e#539#540#0" expanded="true" />
-              </folding>
             </state>
           </provider>
         </entry>
@@ -111,10 +85,30 @@
           </provider>
         </entry>
       </file>
+      <file leaf-file-name="LibException.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/operation/LibException.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="38">
+              <caret line="2" column="13" lean-forward="false" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="IFindchecked.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/operation/IFindchecked.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="19">
+              <caret line="17" column="0" lean-forward="false" selection-start-line="17" selection-start-column="0" selection-end-line="17" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
       <file leaf-file-name="Borrower.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/model/Borrower.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="114">
+            <state relative-caret-position="158">
               <caret line="12" column="0" lean-forward="false" selection-start-line="12" selection-start-column="0" selection-end-line="12" selection-end-column="0" />
               <folding>
                 <element signature="method#Borrower#0;class#Borrower#0" expanded="false" />
@@ -139,29 +133,22 @@
       <file leaf-file-name="LibraryRepository.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/model/LibraryRepository.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="141">
-              <caret line="104" column="48" lean-forward="false" selection-start-line="104" selection-start-column="48" selection-end-line="104" selection-end-column="48" />
+            <state relative-caret-position="701">
+              <caret line="137" column="7" lean-forward="true" selection-start-line="137" selection-start-column="7" selection-end-line="137" selection-end-column="7" />
               <folding>
-                <element signature="method#addBookToList#0;class#LibraryRepository#0" expanded="false" />
-                <element signature="method#romoveBookByList#0;class#LibraryRepository#0" expanded="false" />
-                <element signature="method#checkoutBook#0;class#LibraryRepository#0" expanded="false" />
-                <element signature="method#returnBook#0;class#LibraryRepository#0" expanded="false" />
-                <element signature="method#findBookById#0;class#LibraryRepository#0" expanded="false" />
-                <element signature="method#findBookByAuthor#0;class#LibraryRepository#0" expanded="false" />
-                <element signature="method#findBookBySubject#0;class#LibraryRepository#0" expanded="false" />
-                <element signature="method#findBorrower#0;class#LibraryRepository#0" expanded="false" />
-                <element signature="method#isCheckedOut#0;class#LibraryRepository#0" expanded="false" />
-                <element signature="method#existBook#0;class#LibraryRepository#0" expanded="false" />
+                <element signature="e#3062#3068#0" expanded="true" />
+                <element signature="e#3712#3713#0" expanded="true" />
+                <element signature="e#3744#3745#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="LibraryRepositoryTest.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/test/model/LibraryRepositoryTest.java">
+      <file leaf-file-name="Staff.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/main/java/model/Staff.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="266">
-              <caret line="17" column="29" lean-forward="false" selection-start-line="17" selection-start-column="29" selection-end-line="17" selection-end-column="29" />
+            <state relative-caret-position="283">
+              <caret line="100" column="13" lean-forward="true" selection-start-line="100" selection-start-column="13" selection-end-line="100" selection-end-column="13" />
               <folding />
             </state>
           </provider>
@@ -187,7 +174,9 @@
       <find>br</find>
       <find>setIsCheck</find>
       <find>currentIndex</find>
+      <find>listSubject</find>
       <find>System</find>
+      <find>System.out.print</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -214,10 +203,11 @@
         <option value="$PROJECT_DIR$/src/main/java/model/InputHandler.java" />
         <option value="$PROJECT_DIR$/src/main/java/bean/Book.java" />
         <option value="$PROJECT_DIR$/src/main/java/operation/LibException.java" />
-        <option value="$PROJECT_DIR$/src/main/java/model/Staff.java" />
         <option value="$PROJECT_DIR$/src/file/sampleInput" />
-        <option value="$PROJECT_DIR$/src/main/java/model/LibraryRepository.java" />
+        <option value="$PROJECT_DIR$/src/main/java/model/User.java" />
         <option value="$PROJECT_DIR$/src/main/java/Main.java" />
+        <option value="$PROJECT_DIR$/src/main/java/model/LibraryRepository.java" />
+        <option value="$PROJECT_DIR$/src/main/java/model/Staff.java" />
       </list>
     </option>
   </component>
@@ -235,8 +225,8 @@
     </option>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="1645" />
-    <option name="y" value="-10" />
+    <option name="x" value="1760" />
+    <option name="y" value="-16" />
     <option name="width" value="1936" />
     <option name="height" value="1056" />
   </component>
@@ -304,14 +294,9 @@
               <item name="WorkShop_LibrarySystem" type="b2602c69:ProjectViewProjectNode" />
               <item name="WorkShop_LibrarySystem" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="test" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="WorkShop_LibrarySystem" type="b2602c69:ProjectViewProjectNode" />
-              <item name="WorkShop_LibrarySystem" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="test" type="462c0819:PsiDirectoryNode" />
-              <item name="model" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="operation" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -910,7 +895,7 @@
       <workItem from="1521960511837" duration="3811000" />
       <workItem from="1521964353191" duration="6448000" />
       <workItem from="1522035841137" duration="234000" />
-      <workItem from="1522056829417" duration="5182000" />
+      <workItem from="1522056829417" duration="11185000" />
     </task>
     <servers />
   </component>
@@ -947,10 +932,11 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="43413000" />
+    <option name="totallyTimeSpent" value="49416000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="1912" y="-8" width="1936" height="1056" extended-state="6" />
+    <editor active="true" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
@@ -992,7 +978,7 @@
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
-      <option name="time" value="20" />
+      <option name="time" value="28" />
     </breakpoint-manager>
     <watches-manager />
   </component>
@@ -1006,16 +992,9 @@
         <state relative-caret-position="984">
           <caret line="42" column="39" lean-forward="false" selection-start-line="42" selection-start-column="39" selection-end-line="42" selection-end-column="39" />
           <folding>
-            <element signature="method#addBookToList#0;class#LibraryRepository#0" expanded="false" />
-            <element signature="method#romoveBookByList#0;class#LibraryRepository#0" expanded="false" />
-            <element signature="method#checkoutBook#0;class#LibraryRepository#0" expanded="false" />
-            <element signature="method#returnBook#0;class#LibraryRepository#0" expanded="false" />
-            <element signature="method#findBookById#0;class#LibraryRepository#0" expanded="false" />
-            <element signature="method#findBookByAuthor#0;class#LibraryRepository#0" expanded="false" />
-            <element signature="method#findBookBySubject#0;class#LibraryRepository#0" expanded="false" />
-            <element signature="method#findBorrower#0;class#LibraryRepository#0" expanded="false" />
-            <element signature="method#isCheckedOut#0;class#LibraryRepository#0" expanded="false" />
-            <element signature="method#existBook#0;class#LibraryRepository#0" expanded="false" />
+            <element signature="e#3062#3068#0" expanded="true" />
+            <element signature="e#3712#3713#0" expanded="true" />
+            <element signature="e#3744#3745#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -1034,10 +1013,10 @@
           <caret line="54" column="0" lean-forward="true" selection-start-line="54" selection-start-column="0" selection-end-line="54" selection-end-column="0" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#333#339#0" expanded="true" />
-            <element signature="e#391#397#0" expanded="true" />
-            <element signature="e#454#462#0" expanded="true" />
-            <element signature="e#3728#3737#0" expanded="true" />
+            <element signature="e#227#233#0" expanded="true" />
+            <element signature="e#285#291#0" expanded="true" />
+            <element signature="e#348#356#0" expanded="true" />
+            <element signature="e#3591#3600#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -1055,10 +1034,10 @@
           <caret line="8" column="0" lean-forward="false" selection-start-line="8" selection-start-column="0" selection-end-line="8" selection-end-column="0" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#333#339#0" expanded="true" />
-            <element signature="e#391#397#0" expanded="true" />
-            <element signature="e#454#462#0" expanded="true" />
-            <element signature="e#3728#3737#0" expanded="true" />
+            <element signature="e#227#233#0" expanded="true" />
+            <element signature="e#285#291#0" expanded="true" />
+            <element signature="e#348#356#0" expanded="true" />
+            <element signature="e#3591#3600#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -1068,12 +1047,7 @@
         <state relative-caret-position="264">
           <caret line="11" column="25" lean-forward="false" selection-start-line="11" selection-start-column="16" selection-end-line="11" selection-end-column="25" />
           <folding>
-            <element signature="e#232#233#0" expanded="true" />
-            <element signature="e#263#264#0" expanded="true" />
-            <element signature="e#360#361#0" expanded="true" />
-            <element signature="e#394#395#0" expanded="true" />
-            <element signature="e#505#506#0" expanded="true" />
-            <element signature="e#539#540#0" expanded="true" />
+            <element signature="docComment;class#Book#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -1101,10 +1075,10 @@
           <caret line="26" column="47" lean-forward="false" selection-start-line="26" selection-start-column="47" selection-end-line="26" selection-end-column="47" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#333#339#0" expanded="true" />
-            <element signature="e#391#397#0" expanded="true" />
-            <element signature="e#454#462#0" expanded="true" />
-            <element signature="e#3728#3737#0" expanded="true" />
+            <element signature="e#227#233#0" expanded="true" />
+            <element signature="e#285#291#0" expanded="true" />
+            <element signature="e#348#356#0" expanded="true" />
+            <element signature="e#3591#3600#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -1130,12 +1104,7 @@
         <state relative-caret-position="339">
           <caret line="44" column="0" lean-forward="false" selection-start-line="44" selection-start-column="0" selection-end-line="44" selection-end-column="0" />
           <folding>
-            <element signature="e#232#233#0" expanded="true" />
-            <element signature="e#263#264#0" expanded="true" />
-            <element signature="e#360#361#0" expanded="true" />
-            <element signature="e#394#395#0" expanded="true" />
-            <element signature="e#505#506#0" expanded="true" />
-            <element signature="e#539#540#0" expanded="true" />
+            <element signature="docComment;class#Book#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -1153,16 +1122,9 @@
         <state relative-caret-position="181">
           <caret line="136" column="5" lean-forward="false" selection-start-line="136" selection-start-column="5" selection-end-line="136" selection-end-column="5" />
           <folding>
-            <element signature="method#addBookToList#0;class#LibraryRepository#0" expanded="false" />
-            <element signature="method#romoveBookByList#0;class#LibraryRepository#0" expanded="false" />
-            <element signature="method#checkoutBook#0;class#LibraryRepository#0" expanded="false" />
-            <element signature="method#returnBook#0;class#LibraryRepository#0" expanded="false" />
-            <element signature="method#findBookById#0;class#LibraryRepository#0" expanded="false" />
-            <element signature="method#findBookByAuthor#0;class#LibraryRepository#0" expanded="false" />
-            <element signature="method#findBookBySubject#0;class#LibraryRepository#0" expanded="false" />
-            <element signature="method#findBorrower#0;class#LibraryRepository#0" expanded="false" />
-            <element signature="method#isCheckedOut#0;class#LibraryRepository#0" expanded="false" />
-            <element signature="method#existBook#0;class#LibraryRepository#0" expanded="false" />
+            <element signature="e#3062#3068#0" expanded="true" />
+            <element signature="e#3712#3713#0" expanded="true" />
+            <element signature="e#3744#3745#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -1180,10 +1142,10 @@
           <caret line="26" column="47" lean-forward="true" selection-start-line="26" selection-start-column="47" selection-end-line="26" selection-end-column="47" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#333#339#0" expanded="true" />
-            <element signature="e#391#397#0" expanded="true" />
-            <element signature="e#454#462#0" expanded="true" />
-            <element signature="e#3728#3737#0" expanded="true" />
+            <element signature="e#227#233#0" expanded="true" />
+            <element signature="e#285#291#0" expanded="true" />
+            <element signature="e#348#356#0" expanded="true" />
+            <element signature="e#3591#3600#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -1193,12 +1155,7 @@
         <state relative-caret-position="532">
           <caret line="44" column="0" lean-forward="false" selection-start-line="44" selection-start-column="0" selection-end-line="44" selection-end-column="0" />
           <folding>
-            <element signature="e#232#233#0" expanded="true" />
-            <element signature="e#263#264#0" expanded="true" />
-            <element signature="e#360#361#0" expanded="true" />
-            <element signature="e#394#395#0" expanded="true" />
-            <element signature="e#505#506#0" expanded="true" />
-            <element signature="e#539#540#0" expanded="true" />
+            <element signature="docComment;class#Book#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -1216,16 +1173,9 @@
         <state relative-caret-position="988">
           <caret line="53" column="26" lean-forward="false" selection-start-line="53" selection-start-column="26" selection-end-line="53" selection-end-column="26" />
           <folding>
-            <element signature="method#addBookToList#0;class#LibraryRepository#0" expanded="false" />
-            <element signature="method#romoveBookByList#0;class#LibraryRepository#0" expanded="false" />
-            <element signature="method#checkoutBook#0;class#LibraryRepository#0" expanded="false" />
-            <element signature="method#returnBook#0;class#LibraryRepository#0" expanded="false" />
-            <element signature="method#findBookById#0;class#LibraryRepository#0" expanded="false" />
-            <element signature="method#findBookByAuthor#0;class#LibraryRepository#0" expanded="false" />
-            <element signature="method#findBookBySubject#0;class#LibraryRepository#0" expanded="false" />
-            <element signature="method#findBorrower#0;class#LibraryRepository#0" expanded="false" />
-            <element signature="method#isCheckedOut#0;class#LibraryRepository#0" expanded="false" />
-            <element signature="method#existBook#0;class#LibraryRepository#0" expanded="false" />
+            <element signature="e#3062#3068#0" expanded="true" />
+            <element signature="e#3712#3713#0" expanded="true" />
+            <element signature="e#3744#3745#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -1258,12 +1208,7 @@
         <state relative-caret-position="216">
           <caret line="9" column="27" lean-forward="false" selection-start-line="9" selection-start-column="20" selection-end-line="9" selection-end-column="27" />
           <folding>
-            <element signature="e#232#233#0" expanded="true" />
-            <element signature="e#263#264#0" expanded="true" />
-            <element signature="e#360#361#0" expanded="true" />
-            <element signature="e#394#395#0" expanded="true" />
-            <element signature="e#505#506#0" expanded="true" />
-            <element signature="e#539#540#0" expanded="true" />
+            <element signature="docComment;class#Book#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -1274,16 +1219,9 @@
         <state relative-caret-position="984">
           <caret line="42" column="39" lean-forward="false" selection-start-line="42" selection-start-column="39" selection-end-line="42" selection-end-column="39" />
           <folding>
-            <element signature="method#addBookToList#0;class#LibraryRepository#0" expanded="false" />
-            <element signature="method#romoveBookByList#0;class#LibraryRepository#0" expanded="false" />
-            <element signature="method#checkoutBook#0;class#LibraryRepository#0" expanded="false" />
-            <element signature="method#returnBook#0;class#LibraryRepository#0" expanded="false" />
-            <element signature="method#findBookById#0;class#LibraryRepository#0" expanded="false" />
-            <element signature="method#findBookByAuthor#0;class#LibraryRepository#0" expanded="false" />
-            <element signature="method#findBookBySubject#0;class#LibraryRepository#0" expanded="false" />
-            <element signature="method#findBorrower#0;class#LibraryRepository#0" expanded="false" />
-            <element signature="method#isCheckedOut#0;class#LibraryRepository#0" expanded="false" />
-            <element signature="method#existBook#0;class#LibraryRepository#0" expanded="false" />
+            <element signature="e#3062#3068#0" expanded="true" />
+            <element signature="e#3712#3713#0" expanded="true" />
+            <element signature="e#3744#3745#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -1302,10 +1240,10 @@
           <caret line="54" column="0" lean-forward="true" selection-start-line="54" selection-start-column="0" selection-end-line="54" selection-end-column="0" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#333#339#0" expanded="true" />
-            <element signature="e#391#397#0" expanded="true" />
-            <element signature="e#454#462#0" expanded="true" />
-            <element signature="e#3728#3737#0" expanded="true" />
+            <element signature="e#227#233#0" expanded="true" />
+            <element signature="e#285#291#0" expanded="true" />
+            <element signature="e#348#356#0" expanded="true" />
+            <element signature="e#3591#3600#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -1323,10 +1261,10 @@
           <caret line="8" column="0" lean-forward="false" selection-start-line="8" selection-start-column="0" selection-end-line="8" selection-end-column="0" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#333#339#0" expanded="true" />
-            <element signature="e#391#397#0" expanded="true" />
-            <element signature="e#454#462#0" expanded="true" />
-            <element signature="e#3728#3737#0" expanded="true" />
+            <element signature="e#227#233#0" expanded="true" />
+            <element signature="e#285#291#0" expanded="true" />
+            <element signature="e#348#356#0" expanded="true" />
+            <element signature="e#3591#3600#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -1336,12 +1274,7 @@
         <state relative-caret-position="264">
           <caret line="11" column="25" lean-forward="false" selection-start-line="11" selection-start-column="16" selection-end-line="11" selection-end-column="25" />
           <folding>
-            <element signature="e#232#233#0" expanded="true" />
-            <element signature="e#263#264#0" expanded="true" />
-            <element signature="e#360#361#0" expanded="true" />
-            <element signature="e#394#395#0" expanded="true" />
-            <element signature="e#505#506#0" expanded="true" />
-            <element signature="e#539#540#0" expanded="true" />
+            <element signature="docComment;class#Book#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -1371,10 +1304,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/operation/IFindchecked.java" />
-    <entry file="file://$PROJECT_DIR$/src/main/java/operation/LibException.java" />
     <entry file="file://$PROJECT_DIR$/../../../NTOU_WorkShop_LibSys-master/src/library/system/Main.java" />
-    <entry file="file://$PROJECT_DIR$/src/main/java/model/Staff.java" />
     <entry file="jar://C:/Program Files/Java/jdk1.8.0_152/src.zip!/java/io/PrintStream.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="168">
@@ -1385,49 +1315,49 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/test/model/LibraryRepositoryTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="266">
-          <caret line="17" column="29" lean-forward="false" selection-start-line="17" selection-start-column="29" selection-end-line="17" selection-end-column="29" />
+        <state relative-caret-position="190">
+          <caret line="13" column="16" lean-forward="true" selection-start-line="13" selection-start-column="16" selection-end-line="13" selection-end-column="16" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/file/sampleInput">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="16" selection-end-column="20" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/model/BookTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="114">
+          <caret line="9" column="0" lean-forward="false" selection-start-line="9" selection-start-column="0" selection-end-line="9" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/bean/Book.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="95">
-          <caret line="5" column="13" lean-forward="false" selection-start-line="5" selection-start-column="13" selection-end-line="5" selection-end-column="13" />
+        <state relative-caret-position="312">
+          <caret line="28" column="0" lean-forward="false" selection-start-line="28" selection-start-column="0" selection-end-line="28" selection-end-column="0" />
           <folding>
-            <element signature="e#232#233#0" expanded="true" />
-            <element signature="e#263#264#0" expanded="true" />
-            <element signature="e#360#361#0" expanded="true" />
-            <element signature="e#394#395#0" expanded="true" />
-            <element signature="e#505#506#0" expanded="true" />
-            <element signature="e#539#540#0" expanded="true" />
+            <element signature="docComment;class#Book#0" expanded="false" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/model/LibraryRepository.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/operation/LibException.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="141">
-          <caret line="104" column="48" lean-forward="false" selection-start-line="104" selection-start-column="48" selection-end-line="104" selection-end-column="48" />
-          <folding>
-            <element signature="method#addBookToList#0;class#LibraryRepository#0" expanded="false" />
-            <element signature="method#romoveBookByList#0;class#LibraryRepository#0" expanded="false" />
-            <element signature="method#checkoutBook#0;class#LibraryRepository#0" expanded="false" />
-            <element signature="method#returnBook#0;class#LibraryRepository#0" expanded="false" />
-            <element signature="method#findBookById#0;class#LibraryRepository#0" expanded="false" />
-            <element signature="method#findBookByAuthor#0;class#LibraryRepository#0" expanded="false" />
-            <element signature="method#findBookBySubject#0;class#LibraryRepository#0" expanded="false" />
-            <element signature="method#findBorrower#0;class#LibraryRepository#0" expanded="false" />
-            <element signature="method#isCheckedOut#0;class#LibraryRepository#0" expanded="false" />
-            <element signature="method#existBook#0;class#LibraryRepository#0" expanded="false" />
-          </folding>
+        <state relative-caret-position="38">
+          <caret line="2" column="13" lean-forward="false" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
+          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/model/Borrower.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="114">
+        <state relative-caret-position="158">
           <caret line="12" column="0" lean-forward="false" selection-start-line="12" selection-start-column="0" selection-end-line="12" selection-end-column="0" />
           <folding>
             <element signature="method#Borrower#0;class#Borrower#0" expanded="false" />
@@ -1438,10 +1368,22 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/model/BookTest.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/model/LibraryRepository.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="114">
-          <caret line="9" column="0" lean-forward="false" selection-start-line="9" selection-start-column="0" selection-end-line="9" selection-end-column="0" />
+        <state relative-caret-position="701">
+          <caret line="137" column="7" lean-forward="true" selection-start-line="137" selection-start-column="7" selection-end-line="137" selection-end-column="7" />
+          <folding>
+            <element signature="e#3062#3068#0" expanded="true" />
+            <element signature="e#3712#3713#0" expanded="true" />
+            <element signature="e#3744#3745#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/operation/IFindchecked.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="19">
+          <caret line="17" column="0" lean-forward="false" selection-start-line="17" selection-start-column="0" selection-end-line="17" selection-end-column="0" />
           <folding />
         </state>
       </provider>
@@ -1454,37 +1396,33 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/file/sampleInput">
+    <entry file="file://$PROJECT_DIR$/src/main/java/Main.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="133">
-          <caret line="7" column="0" lean-forward="false" selection-start-line="7" selection-start-column="0" selection-end-line="8" selection-end-column="16" />
-          <folding />
+        <state relative-caret-position="397">
+          <caret line="89" column="54" lean-forward="true" selection-start-line="89" selection-start-column="54" selection-end-line="89" selection-end-column="54" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#227#233#0" expanded="true" />
+            <element signature="e#285#291#0" expanded="true" />
+            <element signature="e#348#356#0" expanded="true" />
+            <element signature="e#3591#3600#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/model/User.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="291">
-          <caret line="38" column="0" lean-forward="false" selection-start-line="38" selection-start-column="0" selection-end-line="38" selection-end-column="0" />
-          <folding>
-            <element signature="method#listAuthor#0;class#User#0" expanded="false" />
-            <element signature="method#listSubject#0;class#User#0" expanded="false" />
-            <element signature="method#showFormatResult#0;class#User#0" expanded="false" />
-          </folding>
+        <state relative-caret-position="150">
+          <caret line="31" column="32" lean-forward="false" selection-start-line="31" selection-start-column="16" selection-end-line="31" selection-end-column="32" />
+          <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/Main.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/model/Staff.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="568">
-          <caret line="109" column="53" lean-forward="false" selection-start-line="109" selection-start-column="53" selection-end-line="109" selection-end-column="53" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#333#339#0" expanded="true" />
-            <element signature="e#391#397#0" expanded="true" />
-            <element signature="e#454#462#0" expanded="true" />
-            <element signature="e#3728#3737#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="283">
+          <caret line="100" column="13" lean-forward="true" selection-start-line="100" selection-start-column="13" selection-end-line="100" selection-end-column="13" />
+          <folding />
         </state>
       </provider>
     </entry>

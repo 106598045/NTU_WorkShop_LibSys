@@ -81,7 +81,7 @@ public class LibraryRepository {
     public static List<Book> findBookByAuthor(String author){
         List<Book> list = new ArrayList<Book>();
         for(int i = 0; i < bookList.size();i++){
-            if(bookList.get(i).getAuthor() == author) {
+            if(bookList.get(i).getAuthor().equals(author)) {
                 list.add(bookList.get(i));
             }
         }
@@ -92,7 +92,7 @@ public class LibraryRepository {
     public static List<Book> findBookBySubject(String subject){
         List<Book> list = new ArrayList<Book>();
         for(int i = 0; i < bookList.size();i++){
-            if(bookList.get(i).getSubject() == subject) {
+            if(bookList.get(i).getSubject().equals(subject)) {
                 list.add(bookList.get(i));
             }
         }
@@ -103,8 +103,10 @@ public class LibraryRepository {
     public static List<Book> findBookByBorrower(String borrower){
         List<Book> list = new ArrayList<Book>();
         for(int i = 0; i < bookList.size();i++){
-            if(bookList.get(i).getBorrower() == borrower) {
-                list.add(bookList.get(i));
+            if(bookList.get(i).getBorrower() != null) { //最後一本借閱人為空
+                if (bookList.get(i).getBorrower().equals(borrower)) {
+                    list.add(bookList.get(i));
+                }
             }
         }
         if(list.isEmpty()) return null;
@@ -126,11 +128,20 @@ public class LibraryRepository {
         return currentId;
     }
 
+    /*public static void getAllBook(){
+        for(int i = 0; i < bookList.size();i++){
+            System.out.println("book id:"+bookList.get(i).getBookId());
+            System.out.println(", book author:"+bookList.get(i).getAuthor());
+            System.out.println(", book subject:"+bookList.get(i).getSubject());
+            System.out.println(", book isCheck:"+bookList.get(i).getIsCheck());
+        }
+    }*/
+
     //if checked out then trun
     public static boolean isCheckedOut(int id){
         boolean res = false;
         for(int i = 0; i < bookList.size();i++){
-            if(bookList.get(i).getBookId() == id) {
+            if(bookList.get(i).getBookId()  == id) {
                 if(bookList.get(i).getIsCheck())
                     res = true;
             }
@@ -141,7 +152,7 @@ public class LibraryRepository {
     private static boolean existBook(String subject){
         boolean res = false;
         for(int i = 0; i < bookList.size();i++){
-            if(bookList.get(i).getSubject() == subject)
+            if(bookList.get(i).getSubject().equals(subject))
                 res = true;
         }
         return res;

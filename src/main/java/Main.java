@@ -1,10 +1,7 @@
 import bean.Book;
 import model.*;
-import sun.rmi.server.InactiveGroupException;
 
-import javax.jws.soap.SOAPBinding;
 import java.util.ArrayList;
-import java.util.Arrays;
 import java.util.LinkedList;
 import java.util.Queue;
 
@@ -61,9 +58,9 @@ public class Main {
                 for (int j = 0; j < userNum; j++) {
                     String[] s = commandList.poll().split(" ");
                     User user;
-                    if (s.length == 2) { //2表示是員工
-                        user = new Staff(s[1]); //s[1]為員工名字
-                    } else { //不然就是借閱人
+                    if (s.length == 2) {
+                        user = new Staff(s[1]);
+                    } else {
                         user = new Borrower(s[1], Integer.parseInt(s[2])); //s[1]為借閱人名字、s[2]為此借閱人最多可借的書數量
                     }
                     users.add(user); //將此使用者存入ArrayList<User>這個容器

@@ -32,7 +32,7 @@ public abstract class User {
                 System.out.println(showFormatResult(bookList.get(i)));
             }
         } catch (NullPointerException e) {//如果為空就不動作
-
+            //e.printStackTrace();
         }
     }
 
@@ -45,7 +45,7 @@ public abstract class User {
                 System.out.println(showFormatResult(bookList.get(i)));
             }
         } catch (NullPointerException e) {//如果為空就不動作
-
+            //e.printStackTrace();
         }
     }
 
