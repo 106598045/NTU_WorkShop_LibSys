@@ -33,6 +33,7 @@ public class Main {
     }
 
     public static void createBookByCommand() {
+        User staff = new Staff("test");
         for (int i = 0; i < commandList.size(); i++) {
             String currentCmd = commandList.poll();
             if (currentCmd.matches("\\d")) {
@@ -45,6 +46,7 @@ public class Main {
                     book1.setAuthor(bookAuthor);
                     book1.setSubject(bookSubject);
                     books.add(book1);
+                    staff.addBook(book1);
                 }
                 return;
             }
@@ -74,7 +76,6 @@ public class Main {
     public static void getBehaviorByCommand(){
         while (!commandList.isEmpty()){
             String currentCmd = commandList.poll();
-            System.out.println(currentCmd);
             String[] s = currentCmd.split(" ");
             String userName = s[0];
             if(currentCmd.contains("addBook")){
@@ -86,7 +87,6 @@ public class Main {
                 book.setAuthor(bookAuthor);
                 book.setSubject(bookSubject);
                 findUser(userName).addBook(book);
-                System.out.println(LibraryRepository.findBookById(0).getAuthor()+","+LibraryRepository.findBookById(0).getSubject());
             }else if(currentCmd.contains("removeBook")){
                 int bookId = Integer.parseInt(s[2]);
                 findUser(userName).removeBook(bookId);
