@@ -15,5 +15,6 @@ public class Main {
         InputHandler inputHandler = new InputHandler(path);
         Queue<String> commandList = inputHandler.getCommandByFile();
         CommandHandler commandHandler = new CommandHandler(commandList);
+        commandHandler.runBehaviorByCommand();
     }
 }

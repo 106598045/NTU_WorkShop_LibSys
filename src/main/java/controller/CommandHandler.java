@@ -20,7 +20,6 @@ public class CommandHandler {
         this.commandList = commandList;
         createBookByCommand();
         createUserByCommand();
-        getBehaviorByCommand();
     }
 
     public void createBookByCommand() {
@@ -64,7 +63,7 @@ public class CommandHandler {
         }
     }
 
-    public void getBehaviorByCommand(){
+    public void runBehaviorByCommand(){
         while (!commandList.isEmpty()){
             String currentCmd = commandList.poll();
             String[] s = currentCmd.split("\\s+");
