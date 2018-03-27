@@ -17,14 +17,8 @@ public class Main {
         path = ""+ InputHandler.class.getClassLoader().getResource("");
         path = path.substring(6)+"sampleInput";
         InputHandler inputHandler = new InputHandler(path);
-        String content = inputHandler.getInputByFile();
+        commandList = inputHandler.getCommandByFile();
 
-        final String[] splittedStr = content.split("\n");
-        for (String s : splittedStr) {
-            if(!s.equals("")) {
-                commandList.add(s);
-            }
-        }
         createBookByCommand();
         createUserByCommand();
         getBehaviorByCommand();

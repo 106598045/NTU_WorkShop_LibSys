@@ -8,12 +8,20 @@ AuthorD SubjectC
 Staff UserA
 Borrower UserB 2
 Borrower UserC 3
-UserA removeBook 0
-UserA listAuthor AuthorB
-UserA listAuthor AuthorC
-UserA listAuthor AuthorD
 UserA addBook
-test testA
-UserA listAuthor test
+AuthorE SubjectD
+UserA removeBook 3
+UserA checkout UserB
+0 1
+UserA checkout UserC
+2
+UserA return 1
+UserB return 0
+UserA return 0
+UserA listAuthor AuthorC
+UserA listSubject SubjectD
+UserA findChecked UserB
+UserC findChecked UserB
+UserB findChecked UserB
 UserA findBorrower 1
 UserA findBorrower 2
